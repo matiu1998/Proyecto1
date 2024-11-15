@@ -1,0 +1,123 @@
+/* Reset y Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Contenido principal */
+main {
+    padding: 40px 10%;
+}
+
+/* Secciones de contenido */
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s forwards;
+}
+
+section h2 {
+    color: #3498db;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+/* Imágenes dentro de secciones */
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo del navbar */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+
+
+/* Animación de FadeIn */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
